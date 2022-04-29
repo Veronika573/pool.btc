@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button, input, textarea {
+    outline: none;
+    border-style: solid;
+    background-color: transparent;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 1155px;
+    margin: 0 auto;
+}
+
+.header .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    background-image: url(img/background.png);
+    padding-bottom: 363px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+}
+
+header .link {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+header .links {
+    display: flex;
+}
+
+header .link_lang {
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+header .link_strip {
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+}
+
+header .link_lang:hover {
+    font-weight: bold;
+}
+
+header .links_lang {
+    display: flex;
+    margin-top: 10px;
+}
+
+header .time {
+    margin-right: 50px;
+}
+
+header .nav {
+    display: flex;
+    margin-top: 10px;
+}
+
+.container .head {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+  }
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo_text {
+    font-size: 21px;
+    font-weight: bold;
+    color:#fff;
+    margin-left: 13px;
+}
+
+header .menu {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    justify-content: space-between;
+}
+
+header .btc {
+    border: 1px solid #fff;
+    display: flex;
+    width: 105px;
+    height: 35px;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 61px;
+    margin-right: 57px;
+}
+
+header .bitcoin {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+header .icon_b {
+    width: 16px;
+    height: 16px;
+}
+
+header .polygon {
+    width: 5px;
+    height: 5px;
+    cursor: pointer;
+}
+
+header .menu_links {
+    display: flex;
+}
+
+header .menu_link {
+    margin-right: 38px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    font-size: 14px;
+    cursor: pointer;
+    padding-bottom: 7px;
+}
+
+header .menu_link:hover {
+    opacity: 100%;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+header .user {
+    display: flex;
+    width: 157px;
+    height: 35px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    margin-left: 39px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header .icon_user {
+    width: 11px;
+    height: 12px;
+}
+
+.header .account {
+    color: #2A1C75;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.header .polygon2 {
+    width: 5px;
+    height: 5px;
+    cursor: pointer;
+}
+
+header .CTA_text, .benefit_text {
+    color:#FFFFFF;
+    font-size: 28px;
+}
+
+header .CTA {
+    width: 511px;
+    height: 107px;
+    margin-bottom: 25px;
+}
+
+.header .benefit_text {
+    width: 628px;
+    height: 96px;
+    font-size: 14px;
+}
+
+header .btn {
+    background-color: #FFFFFF;
+    border-radius: 21px;
+    color: #2A1C75;
+    width: 223px;
+    height: 42px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.lending .container {
+    display: flex;
+    align-items: center;
+    margin-top: 36px;
+}
+
+.header .notebook {
+    align-items: center;
+    max-width: 628px;
+}
+
+.lending .container .text {
+    max-width: 628px;
+    margin-right: 24px;
+}
