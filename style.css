@@ -1,226 +1,334 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
-button, input, textarea {
-    outline: none;
-    border-style: solid;
-    background-color: transparent;
+button,
+input,
+textarea {
+  outline: none;
+  border-style: solid;
+  background-color: transparent;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {
-    width: 1155px;
-    margin: 0 auto;
+  width: 1155px;
+  margin: 0 auto;
 }
 
 .header .head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header {
-    background-image: url(img/background.png);
-    padding-bottom: 363px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size: 100%;
+  background-image: url(img/background.png);
+  padding-bottom: 363px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100%;
 }
 
 header .link {
-    color: rgb(255, 255, 255);
-    font-size: 14px;
-    margin-right: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  margin-right: 20px;
 }
 
 header .links {
-    display: flex;
+  display: flex;
 }
 
 header .link_lang {
-    margin-right: 10px;
-    color: rgb(255, 255, 255);
-    font-size: 14px;
-    cursor: pointer;
+  margin-right: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  cursor: pointer;
 }
 
 header .link_strip {
-    margin-right: 10px;
-    color: rgb(255, 255, 255);
+  margin-right: 10px;
+  color: rgb(255, 255, 255);
 }
 
 header .link_lang:hover {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 header .links_lang {
-    display: flex;
-    margin-top: 10px;
+  display: flex;
+  margin-top: 10px;
 }
 
 header .time {
-    margin-right: 50px;
+  margin-right: 50px;
 }
 
 header .nav {
-    display: flex;
-    margin-top: 10px;
+  display: flex;
+  margin-top: 10px;
 }
 
 .container .head {
-    border-bottom: 1px solid #fff;
-    padding-bottom: 10px;
-  }
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+}
 
 .header .logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo_text {
-    font-size: 21px;
-    font-weight: bold;
-    color:#fff;
-    margin-left: 13px;
+  font-size: 21px;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 13px;
 }
 
 header .menu {
-    display: flex;
-    align-items: center;
-    padding-top: 24px;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  justify-content: space-between;
 }
 
 header .btc {
-    border: 1px solid #fff;
-    display: flex;
-    width: 105px;
-    height: 35px;
-    border-radius: 5px;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-left: 61px;
-    margin-right: 57px;
+  border: 1px solid #fff;
+  display: flex;
+  width: 105px;
+  height: 35px;
+  border-radius: 5px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 61px;
+  margin-right: 57px;
 }
 
 header .bitcoin {
-    color: #fff;
-    font-size: 14px;
-    font-weight: bold;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 header .icon_b {
-    width: 16px;
-    height: 16px;
+  width: 16px;
+  height: 16px;
 }
 
 header .polygon {
-    width: 5px;
-    height: 5px;
-    cursor: pointer;
+  width: 5px;
+  height: 5px;
+  cursor: pointer;
 }
 
 header .menu_links {
-    display: flex;
+  display: flex;
 }
 
 header .menu_link {
-    margin-right: 38px;
-    color: #FFFFFF;
-    opacity: 0.6;
-    font-size: 14px;
-    cursor: pointer;
-    padding-bottom: 7px;
+  margin-right: 38px;
+  color: #ffffff;
+  opacity: 0.6;
+  font-size: 14px;
+  cursor: pointer;
+  padding-bottom: 7px;
 }
 
 header .menu_link:hover {
-    opacity: 100%;
-    border-bottom: 2px solid #FFFFFF;
+  opacity: 100%;
+  border-bottom: 2px solid #ffffff;
 }
 
 header .user {
-    display: flex;
-    width: 157px;
-    height: 35px;
-    background-color: #FFFFFF;
-    border-radius: 5px;
-    margin-left: 39px;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  width: 157px;
+  height: 35px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-left: 39px;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 header .icon_user {
-    width: 11px;
-    height: 12px;
+  width: 11px;
+  height: 12px;
 }
 
 .header .account {
-    color: #2A1C75;
-    font-size: 14px;
-    font-weight: bold;
+  color: #2a1c75;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .header .polygon2 {
-    width: 5px;
-    height: 5px;
-    cursor: pointer;
+  width: 5px;
+  height: 5px;
+  cursor: pointer;
 }
 
-header .CTA_text, .benefit_text {
-    color:#FFFFFF;
-    font-size: 28px;
+header .CTA_text,
+.benefit_text {
+  color: #ffffff;
+  font-size: 28px;
 }
 
 header .CTA {
-    width: 511px;
-    height: 107px;
-    margin-bottom: 25px;
+  width: 511px;
+  height: 107px;
+  margin-bottom: 25px;
 }
 
 .header .benefit_text {
-    width: 628px;
-    height: 96px;
-    font-size: 14px;
+  width: 628px;
+  height: 96px;
+  font-size: 14px;
 }
 
 header .btn {
-    background-color: #FFFFFF;
-    border-radius: 21px;
-    color: #2A1C75;
-    width: 223px;
-    height: 42px;
-    font-size: 14px;
-    border: none;
-    cursor: pointer;
+  background-color: #ffffff;
+  border-radius: 21px;
+  color: #2a1c75;
+  width: 223px;
+  height: 42px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
 }
 
 .lending .container {
-    display: flex;
-    align-items: center;
-    margin-top: 36px;
+  display: flex;
+  align-items: center;
+  margin-top: 36px;
 }
 
 .header .notebook {
-    align-items: center;
-    max-width: 628px;
+  align-items: center;
+  max-width: 628px;
 }
 
 .lending .container .text {
-    max-width: 628px;
-    margin-right: 24px;
+  max-width: 628px;
+  margin-right: 24px;
+}
+
+.cards .container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -107px;
+}
+
+.cards .card {
+  width: 346px;
+  height: 436px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 35px #d5d5e3;
+}
+
+.cards .img_bitcoin {
+  width: 30px;
+  height: 30px;
+  margin-left: 35px;
+  margin-right: 12px;
+}
+
+.cards .caption {
+  color: #333333;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.cards .logo_card {
+  display: flex;
+  padding-top: 29px;
+  margin-bottom: 24px;
+}
+
+.cards .text_word {
+  font-size: 14px;
+  color: #4f4f4f;
+  margin-bottom: 2px;
+}
+
+.cards .text_num {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 13px;
+}
+
+.cards .information {
+  display: flex;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.cards .arrow {
+  margin-left: 6px;
+}
+
+.cards .text_information {
+  color: #2f80ed;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.cards .button_start,
+.button_review {
+  width: 276px;
+  height: 42px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cards .button_start {
+  background: linear-gradient(58.78deg, #2a1c75 -599.37%, #5639b7 81.13%);
+  color: #ffffff;
+  border: none;
+  margin-bottom: 11px;
+}
+
+.cards .button_review {
+  color: #5639b7;
+  border-color: #5639b7;
+}
+
+.cards .content,
+.information,
+.buttons {
+  padding-left: 35px;
+  padding-right: 47px;
+}
+
+.cards .content {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.news .topic {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333333;
+  border-bottom: 2px solid #ccd4dc;
+  padding-bottom: 22px;
 }
