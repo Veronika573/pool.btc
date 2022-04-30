@@ -133,7 +133,6 @@ header .icon_b {
 
 header .polygon {
   width: 5px;
-  height: 5px;
   cursor: pointer;
 }
 
@@ -191,13 +190,12 @@ header .CTA_text,
 
 header .CTA {
   width: 511px;
-  height: 107px;
   margin-bottom: 25px;
 }
 
 .header .benefit_text {
   width: 628px;
-  height: 96px;
+  margin-bottom: 25px;
   font-size: 14px;
 }
 
@@ -206,7 +204,7 @@ header .btn {
   border-radius: 21px;
   color: #2a1c75;
   width: 223px;
-  height: 42px;
+  padding: 12px 0;
   font-size: 14px;
   border: none;
   cursor: pointer;
@@ -235,16 +233,48 @@ header .btn {
 }
 
 .cards .card {
-  width: 346px;
-  height: 436px;
   border-radius: 5px;
   box-shadow: 0px 0px 35px #d5d5e3;
+  padding: 29px 35px 36px 35px;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .cards .container {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .cards .card {
+    width: 45%;
+  }
+
+  .cards .container {
+    gap: 58px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards .container {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cards .card {
+  width: 30%;
+}
+
+.cards .container {
+  row-gap: 20px;
+}
+}
+
+.cards .card:not(:last-child) {
+  margin-right: 58px;
 }
 
 .cards .img_bitcoin {
   width: 30px;
-  height: 30px;
-  margin-left: 35px;
   margin-right: 12px;
 }
 
@@ -256,7 +286,6 @@ header .btn {
 
 .cards .logo_card {
   display: flex;
-  padding-top: 29px;
   margin-bottom: 24px;
 }
 
@@ -291,8 +320,8 @@ header .btn {
 
 .cards .button_start,
 .button_review {
-  width: 276px;
-  height: 42px;
+  width: 100%;
+  padding: 12px 0;
   border-radius: 5px;
   font-weight: bold;
   font-size: 14px;
@@ -311,18 +340,14 @@ header .btn {
   border-color: #5639b7;
 }
 
-.cards .content,
-.information,
-.buttons {
-  padding-left: 35px;
-  padding-right: 47px;
+.cards .content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 27px;
 }
 
-.cards .content {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.cards .content .text_group.full-width {
+  grid-column: 1 / span 2;
 }
 
 .news .topic {
@@ -331,4 +356,5 @@ header .btn {
   color: #333333;
   border-bottom: 2px solid #ccd4dc;
   padding-bottom: 22px;
+  margin-top: 83px;
 }
