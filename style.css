@@ -119,6 +119,7 @@ header .btc {
   align-items: center;
   margin-left: 61px;
   margin-right: 57px;
+  cursor: pointer;
 }
 
 header .bitcoin {
@@ -134,7 +135,6 @@ header .icon_b {
 
 header .polygon {
   width: 5px;
-  cursor: pointer;
 }
 
 header .menu_links {
@@ -165,6 +165,7 @@ header .user {
   margin-left: 39px;
   justify-content: space-evenly;
   align-items: center;
+  cursor: pointer;
 }
 
 header .icon_user {
@@ -180,8 +181,6 @@ header .icon_user {
 
 .header .polygon2 {
   width: 5px;
-  height: 5px;
-  cursor: pointer;
 }
 
 header .CTA_text,
@@ -239,6 +238,7 @@ header .btn {
   box-shadow: 0px 0px 35px #d5d5e3;
   padding: 29px 35px 36px 35px;
   width: 100%;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
@@ -384,6 +384,7 @@ header .btn {
   width: 346px;
   height: 324px;
   position: relative;
+  cursor: pointer;
 }
 
 .cards_news .adt {
@@ -471,6 +472,7 @@ header .btn {
 .tweets .card_tweet {
   width: 346px;
   margin-top: 31px;
+  cursor: pointer;
 }
 
 .tweets .tweet_line {
@@ -512,9 +514,6 @@ footer .btc {
   border-radius: 5px;
   justify-content: space-evenly;
   align-items: center;
-}
-
-footer .polygon {
   cursor: pointer;
 }
 
