@@ -23,6 +23,7 @@ textarea {
 
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #f4f4f9;
 }
 
 .container {
@@ -147,6 +148,7 @@ header .menu_link {
   font-size: 14px;
   cursor: pointer;
   padding-bottom: 7px;
+  border-bottom: 2px solid transparent;
 }
 
 header .menu_link:hover {
@@ -240,7 +242,7 @@ header .btn {
 }
 
 @media (max-width: 1200px) {
-    .cards .container {
+  .cards .container {
     justify-content: center;
     flex-direction: column;
   }
@@ -256,17 +258,17 @@ header .btn {
 
 @media (max-width: 600px) {
   .cards .container {
-  flex-direction: column;
-  justify-content: center;
-}
+    flex-direction: column;
+    justify-content: center;
+  }
 
-.cards .card {
-  width: 30%;
-}
+  .cards .card {
+    width: 30%;
+  }
 
-.cards .container {
-  row-gap: 20px;
-}
+  .cards .container {
+    row-gap: 20px;
+  }
 }
 
 .cards .card:not(:last-child) {
@@ -358,3 +360,194 @@ header .btn {
   padding-bottom: 22px;
   margin-top: 83px;
 }
+
+.news .line {
+  margin: -1px;
+}
+
+.news .news_line {
+  width: 346px;
+  background-color: #5639b7;
+  size: 5px;
+}
+
+.cards_news {
+  margin-top: 39px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card_new {
+  box-shadow: 0px 0px 35px #d5d5e3;
+  border-radius: 5px;
+  padding: 23px 24px 17px 19px;
+  width: 346px;
+  height: 324px;
+  position: relative;
+}
+
+.cards_news .adt {
+  font-size: 14px;
+  color: #449ed1;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.cards_news .adt_news {
+  color: #eb5757;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.cards_news .adt_stock {
+  color: #e8b92a;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.cards_news .caption_new {
+  font-size: 24px;
+  color: #333333;
+  font-weight: bold;
+  margin-bottom: 28px;
+}
+
+.cards_news .text_new {
+  font-size: 14px;
+  color: #333333;
+}
+
+.cards_news .new_date {
+  font-size: 14px;
+  color: #afafaf;
+}
+
+.cards_news .text_date {
+  position: absolute;
+  bottom: 17px;
+}
+
+.tweets .button_read {
+  width: 107px;
+  height: 42px;
+  color: #5639b7;
+  border-color: #5639b7;
+  border-radius: 21px;
+  cursor: pointer;
+}
+
+.tweets .topic {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.tweets .line {
+  margin: -1px;
+}
+
+.tweets .news_line {
+  width: 346px;
+  background-color: #5639b7;
+  size: 5px;
+}
+
+.tweets .topic_tweets {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #ccd4dc;
+  padding-bottom: 22px;
+  margin-top: 81px;
+}
+
+.tweets .cards_tweets {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweets .card_tweet {
+  width: 346px;
+  margin-top: 31px;
+}
+
+.tweets .tweet_line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.tweets .tweet_name {
+  color: #2f80ed;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.tweets .tweet_date {
+  color: #afafaf;
+  font-size: 14px;
+}
+
+.tweets .tweet_text {
+  color: #333333;
+  font-size: 14px;
+}
+
+.tweets .hashtag {
+  font-size: 14px;
+  color: #2f80ed;
+}
+
+footer {
+  background: #ffffff;
+}
+
+footer .btc {
+  border: 1px solid #CCD4DC;
+  display: flex;
+  width: 105px;
+  height: 35px;
+  border-radius: 5px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer .polygon {
+  cursor: pointer;
+}
+
+footer .menu_links {
+  display: flex;
+}
+
+footer .menu_link {
+  color: #333333;
+  margin-right: 39px;
+  font-weight: bold;
+  opacity: 60%;
+  cursor: pointer;
+}
+
+footer .menu_link:hover {
+  opacity: 100%;
+}
+
+footer .lower_menu {
+  border-bottom: 1px solid #CCD4DC;
+  padding-bottom: 32px;
+  padding-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .rights {
+  color: #333333;
+  opacity: 60%;
+  font-size: 14px;
+  margin-top: 9px;
+  margin-bottom: 11px;
+}
+
