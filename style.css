@@ -27,8 +27,9 @@ body {
 }
 
 .container {
-  width: 1155px;
+  max-width: 1155px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
 .header .head {
@@ -42,7 +43,6 @@ body {
   padding-bottom: 363px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 100%;
 }
 
 header .link {
@@ -112,20 +112,45 @@ header .menu {
 header .btc {
   border: 1px solid #fff;
   display: flex;
-  width: 105px;
-  height: 35px;
   border-radius: 5px;
   justify-content: space-evenly;
   align-items: center;
   margin-left: 61px;
   margin-right: 57px;
   cursor: pointer;
+  padding: 9px 17px 10px 17px; 
+}
+
+@media (max-width: 1200px) {
+  header .btc {
+    margin-left: 36px;
+    margin-right: 36px;
+  }
+}
+
+@media (max-width: 1155px) {
+  header .menu_menu {
+    display: none;
+  }
+  header .currency .links .link:not(:first-child) {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .language .links_lang .link_lang:not(:first-child) {
+    display: none;
+  }
+  .header .language .link_strip {
+    display: none;
+  }
 }
 
 header .bitcoin {
   color: #fff;
   font-size: 14px;
   font-weight: bold;
+  margin: 0 11px;;
 }
 
 header .icon_b {
@@ -158,18 +183,15 @@ header .menu_link:hover {
 
 header .user {
   display: flex;
-  width: 157px;
-  height: 35px;
   background-color: #ffffff;
   border-radius: 5px;
-  margin-left: 39px;
   justify-content: space-evenly;
   align-items: center;
   cursor: pointer;
+  padding: 11px 20px 12px 20px;
 }
 
 header .icon_user {
-  width: 11px;
   height: 12px;
 }
 
@@ -177,6 +199,7 @@ header .icon_user {
   color: #2a1c75;
   font-size: 14px;
   font-weight: bold;
+  margin: 0 15px;
 }
 
 .header .polygon2 {
@@ -190,12 +213,10 @@ header .CTA_text,
 }
 
 header .CTA {
-  width: 511px;
   margin-bottom: 25px;
 }
 
 .header .benefit_text {
-  width: 628px;
   margin-bottom: 25px;
   font-size: 14px;
 }
@@ -211,7 +232,11 @@ header .btn {
   cursor: pointer;
 }
 
-.lending .container {
+.lending .text {
+  width: 50%;
+}
+
+.lending .lending_text {
   display: flex;
   align-items: center;
   margin-top: 36px;
@@ -220,11 +245,27 @@ header .btn {
 .header .notebook {
   align-items: center;
   max-width: 628px;
+  width: 50%;
 }
 
-.lending .container .text {
+.header .img_laptop {
+  width: 100%;
+}
+
+.lending .lending_text .text {
   max-width: 628px;
   margin-right: 24px;
+}
+
+@media (max-width: 768px) {
+  .lending .notebook {
+    display: none;
+  }
+  .lending .lending_text .text {
+    max-width: 100%;
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 .cards .container {
