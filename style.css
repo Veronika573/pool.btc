@@ -115,8 +115,8 @@ header .btc {
   border-radius: 5px;
   justify-content: space-evenly;
   align-items: center;
-  margin-left: 61px;
   margin-right: 57px;
+  margin-left: 61px;
   cursor: pointer;
   padding: 9px 17px 10px 17px; 
 }
@@ -128,12 +128,25 @@ header .btc {
   }
 }
 
+@media (max-width: 1200px) {
+  header .btc {
+    margin-left: 0px;
+    margin-right: 61px;
+  }
+  .header .logo {
+    margin-right: 36px;
+  }
+}
+
 @media (max-width: 1155px) {
   header .menu_menu {
     display: none;
   }
   header .currency .links .link:not(:first-child) {
     display: none;
+  }
+  .header .logo {
+    margin-right: 36px;
   }
 }
 
@@ -144,6 +157,18 @@ header .btc {
   .header .language .link_strip {
     display: none;
   }
+  .header .logo {
+    margin-right: 36px;
+  }
+  .header .btc {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header .user {
+    margin-top: -55px;
+  }
 }
 
 header .bitcoin {
@@ -151,6 +176,17 @@ header .bitcoin {
   font-size: 14px;
   font-weight: bold;
   margin: 0 11px;;
+}
+
+header .logo_button {
+  display: flex;
+}
+
+@media (max-width: 576px) {
+  .header .logo_button {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 header .icon_b {
@@ -174,6 +210,7 @@ header .menu_link {
   cursor: pointer;
   padding-bottom: 7px;
   border-bottom: 2px solid transparent;
+  border-bottom: 73px;
 }
 
 header .menu_link:hover {
@@ -257,6 +294,12 @@ header .btn {
   margin-right: 24px;
 }
 
+.lending .slider-controls .line {
+  color: white;
+  width: 57px;
+  height: 2px;
+}
+
 @media (max-width: 768px) {
   .lending .notebook {
     display: none;
@@ -269,9 +312,23 @@ header .btn {
 }
 
 .cards .container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 58px;
   margin-top: -107px;
+}
+
+@media (max-width: 992px){
+  .cards .container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+  }
+}
+
+@media (max-width: 576px){
+  .cards .container{
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .cards .card {
@@ -280,40 +337,6 @@ header .btn {
   padding: 29px 35px 36px 35px;
   width: 100%;
   cursor: pointer;
-}
-
-@media (max-width: 1200px) {
-  .cards .container {
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .cards .card {
-    width: 45%;
-  }
-
-  .cards .container {
-    gap: 58px;
-  }
-}
-
-@media (max-width: 600px) {
-  .cards .container {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .cards .card {
-    width: 30%;
-  }
-
-  .cards .container {
-    row-gap: 20px;
-  }
-}
-
-.cards .card:not(:last-child) {
-  margin-right: 58px;
 }
 
 .cards .img_bitcoin {
@@ -408,24 +431,47 @@ header .btn {
 
 .news .news_line {
   width: 346px;
-  background-color: #5639b7;
-  size: 5px;
+  border-bottom: 5px solid #5639b7;
+  margin-top: -4px;
+  border-radius: 3px;
 }
 
-.cards_news {
+.news .cards_news {
   margin-top: 39px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 58px;
 }
 
-.card_new {
+@media (max-width: 992px){
+  .news .cards_news{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 576px){
+  .news .cards_news{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 439px){
+  .news .cards_news{
+    grid-template-columns: 1fr;
+  }
+}
+
+.news .card_new {
   box-shadow: 0px 0px 35px #d5d5e3;
   border-radius: 5px;
   padding: 23px 24px 17px 19px;
-  width: 346px;
-  height: 324px;
   position: relative;
   cursor: pointer;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .cards_news .adt {
@@ -463,12 +509,8 @@ header .btn {
 
 .cards_news .new_date {
   font-size: 14px;
-  color: #afafaf;
-}
-
-.cards_news .text_date {
-  position: absolute;
-  bottom: 17px;
+  color: #AFAFAF;
+  margin-top: 39px;
 }
 
 .tweets .button_read {
@@ -492,8 +534,9 @@ header .btn {
 
 .tweets .news_line {
   width: 346px;
-  background-color: #5639b7;
-  size: 5px;
+  border-bottom: 5px solid #5639b7;
+  margin-top: -4px;
+  border-radius: 3px;
 }
 
 .tweets .topic_tweets {
@@ -506,14 +549,28 @@ header .btn {
 }
 
 .tweets .cards_tweets {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 41px;
+}
+
+@media (max-width: 992px) {
+  .tweets .cards_tweets {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 31px;
+  }
+}
+
+@media (max-width: 576px){
+  .tweets .cards_tweets{
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .tweets .card_tweet {
-  width: 346px;
   margin-top: 31px;
   cursor: pointer;
+  width: 100%;
 }
 
 .tweets .tweet_line {
@@ -543,6 +600,11 @@ header .btn {
   color: #2f80ed;
 }
 
+.tweets .tweet_numbers{
+  margin-top: 19px;
+  width: 100%;
+}
+
 footer {
   background: #ffffff;
 }
@@ -564,11 +626,14 @@ footer .menu_links {
 
 footer .menu_link {
   color: #333333;
-  margin-right: 39px;
   font-weight: bold;
   opacity: 60%;
   cursor: pointer;
 }
+
+footer .menu_link:not(:last-child){
+  margin-right: 39px;
+} 
 
 footer .menu_link:hover {
   opacity: 100%;
